@@ -14,3 +14,15 @@ delayedExecution.then(function sucess(data) {
 }, function failure(data) {
     console.log(data)
 })
+
+const promise1 = Promise.reject(3);
+const promise2 = Promise.resolve(45);
+const promise3 = new Promise((resolve, reject) => {
+    setTimeout(function () {
+        resolve("Failed to Execute Promise")
+    }, 10000);
+});
+
+Promise.any([promise1, promise2, promise3]).then((values) => {
+    console.log(values);
+});
