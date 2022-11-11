@@ -1,0 +1,11 @@
+{
+  "name": "usingnpm",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "author": "Mayank Gupta",
+  "license": "ISC",
+  "dependencies": {
+    "randomize": "^0.0.4"
+  }
+}
