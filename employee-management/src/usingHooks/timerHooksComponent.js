@@ -2,8 +2,8 @@ import React, { useState, useEffect } from "react";
 
 export default function TimerHooksComponent(props) {
     
-    let [intervalValue, setIntervalValue] = useState(1000);
-    let [employee, setEmployee] = useState({ ...props.employee });
+    var [intervalValue, setIntervalValue] = useState(1000);
+    var [employee, setEmployee] = useState( });
     
     useEffect(() => {
         setInterval(() => {
@@ -23,7 +23,8 @@ export default function TimerHooksComponent(props) {
     
     useEffect(() => {
         console.log("intervalValue Updated Again")
-    }, [intervalValue]); 
+    }, [intervalValue]);
+    
     
     function incrementCounter() {
         setEmployee({
